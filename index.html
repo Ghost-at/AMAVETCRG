@@ -5,7 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 <title>AMAVET CRG — Clínica Veterinaria</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+  <script>
+  // Credenciales exactas de tu proyecto AMAVET en Supabase
+  const SUPABASE_URL = 'https://gdakvpzltovabtsxyqhw.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdkYWt2cHpsdG92YWJ0c3h5cWh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU3OTM5MzksImV4cCI6MjA5MTM2OTkzOX0.tG3hs9WKTsyTE3b8NZB4xESMVaXWyui9vUeY1njH50k';
+
+  // Inicializar la conexión
+  const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  // --- A partir de aquí sigue el resto de tu código JS ---
+  let pacientes = [];
+  let historias = [];
+  // ... (no borres el resto de tus funciones)
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <style>
 :root{
